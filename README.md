@@ -1,7 +1,11 @@
-Move and Alias operations in Rust
+Memory semantics in Rust
 ==================================
 
-The below table lists the possible move and alias operations in Rust
+This project contains code that demonstrates the various memory semantics of the assignment operator in Rust.
+The table and stage diagrams below depict the same in a visual manner.
+
+Table of Assignment related memory semantics
+-------------------------------------
 
 | Assign From | Assign To | Effect on source variable | 
 | ---------:| -----------:| ----------------:|
@@ -13,10 +17,10 @@ The below table lists the possible move and alias operations in Rust
 | Read-Write Owner | Read-Write Ref   | Becomes unusable till dest can't be expired        | 
 | Read-Write Owner | Read-Only Ref    | Becomes RO, Non-Movable till dest can't be expired | 
 
-Transition Diagram
-==================
+Transition Diagram for Assignment related memory semantics
+------------------
 ![Transition Diagram](rust-memory-2.svg)
 
 TODO
-=====
+----
 - Add Copyable types to this list?
