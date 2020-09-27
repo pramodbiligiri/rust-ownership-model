@@ -96,8 +96,8 @@ fn ref_scenarios() {
 
         // Identifier 'ref_rw' is now available as RW refs can be expired
         println!("{}", ref_rw.age);
-
     }
+
 }
 
 fn func(p: &Person) {

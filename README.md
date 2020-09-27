@@ -12,13 +12,10 @@ The below table lists the possible move and alias operations in Rust
 | Read-Only Owner  | Read-Only Ref    | Becomes RO, Non-Movable till Dest can't be expired |
 | Read-Write Owner | Read-Write Ref   | Becomes unusable till dest can't be expired        | 
 | Read-Write Owner | Read-Only Ref    | Becomes RO, Non-Movable till dest can't be expired | 
-| Read-Only Ref    | Read-Only Ref    | None                                               |
-| Read-Write Ref   | Read-Only Ref    | Becomes RO till Dest can't be expired              |
-| Read-Write Ref   | Read-Write Ref   | Becomes unusable till Dest can't be expired        |
 
 Transition Diagram
 ==================
-![Transition Diagram](rust-memory.svg)
+![Transition Diagram](rust-memory-2.svg)
 
 TODO
 =====
