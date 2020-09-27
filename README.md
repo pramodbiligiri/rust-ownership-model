@@ -2,7 +2,7 @@ Memory semantics in Rust
 ==================================
 
 This project contains code that demonstrates the various memory semantics of the assignment operator in Rust.
-The table and stage diagrams below depict the same in a visual manner.
+The table and state diagrams below depict the same in a visual manner.
 
 Table of Assignment related memory semantics
 -------------------------------------
